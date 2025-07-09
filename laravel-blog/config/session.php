@@ -129,7 +129,11 @@ return [
 
     'cookie' => env(
         'SESSION_COOKIE',
+<<<<<<< HEAD
         Str::snake((string) env('APP_NAME', 'laravel')).'_session'
+=======
+        Str::slug(env('APP_NAME', 'laravel'), '_').'_session'
+>>>>>>> b3236cb1c426498c38d489d6e3d5525a3110c757
     ),
 
     /*
