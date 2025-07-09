@@ -147,11 +147,8 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-<<<<<<< HEAD
             'prefix' => env('REDIS_PREFIX', Str::slug((string) env('APP_NAME', 'laravel')).'-database-'),
-=======
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
->>>>>>> b3236cb1c426498c38d489d6e3d5525a3110c757
             'persistent' => env('REDIS_PERSISTENT', false),
         ],
 
